@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <title> Planeta </title>
+</head>
+
+<body>
+  <main id="main">
+    <form id="form" action="">
+      <div id="data">
+        <div id="id-div">
+          <h2 id="title"> #Numero de planeta </h2>
+          <input type="text" id="id" pattern="[0-9]" title="Números enteros" placeholder="ID"/>
+          <input type="text" id="id" pattern="[0-9]" title="Números enteros" placeholder="ID"/>
+          <input type="text" id="id" pattern="[0-9]" title="Números enteros" placeholder="ID"/>
+          <input type="text" id="id" pattern="[0-9]" title="Números enteros" placeholder="ID"/>
+          <input type="text" id="id" pattern="[0-9]" title="Números enteros" placeholder="ID"/>
+        </div>
+
+        <div id="nombre-div">
+          <h2 id="title"> Planeta </h2>
+          <input type="text" id="nombre" placeholder="Nombre"/>
+          <input type="text" id="nombre" placeholder="Nombre"/>
+          <input type="text" id="nombre" placeholder="Nombre"/>
+          <input type="text" id="nombre" placeholder="Nombre"/>
+          <input type="text" id="nombre" placeholder="Nombre"/>
+        </div>
+
+        <div id="distancia-div">
+          <h2 id="title"> Distancia (en años luz) </h2>
+          <input type="text" id="distancia" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="distancia"/>
+          <input type="text" id="distancia" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="distancia"/>
+          <input type="text" id="distancia" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="distancia"/>
+          <input type="text" id="distancia" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="distancia"/>
+          <input type="text" id="distancia" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="distancia"/>
+        </div>
+
+        <div id="tamanio-div">
+          <h2 id="title"> Tamaño </h2>
+          <input type="text" id="tamanio" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="tamaño"/>
+          <input type="text" id="tamanio" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="tamaño"/>
+          <input type="text" id="tamanio" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="tamaño"/>
+          <input type="text" id="tamanio" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="tamaño"/>
+          <input type="text" id="tamanio" pattern="[1-9]*.{0,1}[1-9]+" title="Números enteros"
+          placeholder="tamaño"/>
+        </div>
+      </div>
+    
+      <div id="btns"-div> 
+        <input type="button" id="submit" value="Enviar"/>
+        <input type="button" id="ordenar" value="Ordenar"/>
+        <input type="button" id="filtrar" value="Filtrar" />
+        <input type="button" id="buscar" value="Buscar" />
+      </div>
+    </form>
+  </main>
+  <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <script src="./scripts/main.js" type="module"></script>
+</body>
+</html>
