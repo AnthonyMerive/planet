@@ -16,7 +16,7 @@ class lity{
     this.objPlanetas = [];
 
     for(let i=0; i<ids.length; ++i){
-      if(isNaN(ids[i])) continue;
+    // if(isNaN(ids[i])) alert();
 
       let currPlanet = new Planeta(names[i]);
       currPlanet.set_Data(ids[i], distances[i], sizes[i]);
@@ -49,7 +49,19 @@ class lity{
     this.putInformation();
   }
 
-  
+  filter_by_distance(){
+    let value  = parseFloat(prompt("Ingresa el valor"));
+    if(isNaN(value)) alert("Ingresa un numero");
+    else{
+      let tmpDist = this.objPlanetas.map(e => e.distance);
+     
+      tmpDist = tmpDist.filter((el) =>{ return el <= value; });
+      
+      tmpDist.forEach((k)=> {
+        console.log(k);
+      });
+    }
+  }
 
   //en construccion:
 
@@ -89,7 +101,8 @@ class lity{
 
 let AH = "FLAG";
 
-document.getElementById("submit").addEventListener('click', () =>{
+document.getElementById("submit").addEventListener('click', (e) =>{
+  e.preventDefault();
   AH = new lity();
   alert("creado");
 });
@@ -102,6 +115,13 @@ document.getElementById("ordenar").addEventListener('click', () =>{
 
   }
 
+});
+
+document.getElementById("filtrar").addEventListener('click', () =>{
+  if(AH == "FLAG") alert("no ha enviado los datos");
+  else{
+    AH.filter_by_distance();
+  }
 });
 
 
